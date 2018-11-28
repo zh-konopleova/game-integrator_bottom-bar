@@ -1,0 +1,79 @@
+<!--Выполнила Коноплёва Евгения  -->
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>bottom-bar</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="bar">
+      <div class="info">
+        <button
+          class="button info__button button--sound"
+          type="button">i</button>
+      </div>
+
+      <div class="bet">
+        <button
+          class="button bet__button bet__button--minus button--sound"
+          type="button">-</button>
+        <p class="bet__total">
+          Total bet
+          <span class="bet__count">$8808.10</span>
+        </p>
+        <button
+          class="button bet__button bet__button--plus button--sound"
+          type="button">+</button>
+      </div>
+
+      <div class="coin">
+        <p class="coin__label">
+          coin
+          <span class="coin__count">$5689</span>
+        </p>
+      </div>
+
+      <div class="good-luck">
+        <p class="good-luck__text">Good luck!</p>
+      </div>
+
+      <div class="turbo">
+        <input
+          id="turbo__checkbox"
+          class="turbo__checkbox"
+          type="checkbox" checked>
+        <label
+          class="turbo__label button--sound"
+          for="turbo__checkbox">
+          <span class="turbo__label-text">Turbo</span>
+        </label>
+      </div>
+
+      <div class="spin">
+        <div class="spin__list-container">
+          <span class="spin__list-label button--sound">Auto</span>
+          <ul class="spin__list">
+            <li class="spin__item">until feature</li>
+            <li class="spin__item">25 spins</li>
+            <li class="spin__item">20 spins</li>
+            <li class="spin__item">15 spins</li>
+            <li class="spin__item">10 spins</li>
+            <li class="spin__item">5 spins</li>
+          </ul>
+        </div>
+
+        <button
+          class="spin__button button--sound"
+          type="button">
+          <span class="spin__button-todo"></span>
+        </button>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="./app.js">
+    </script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+.turbo {
+  position: absolute;
+  top: 145px;
+  left: 800px;
+}
+
+.turbo__checkbox {
+  display: none;
+}
+
+.turbo__label {
+  position: relative;
+  display: block;
+  width: 75px;
+  height: 50px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.turbo__label-text {
+  display: block;
+  position: absolute;
+
+  width: 70px;
+  height: 25px;
+
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 25px;
+  vertical-align: middle;
+
+  text-transform: uppercase;
+  background-image: url("../img/bg-turbo-button-normal.png");
+  background-size: 100% auto;
+}
+
+.turbo__label-text:hover {
+  background-image: url("../img/bg-turbo-button-hover.png");
+}
+
+.turbo__label-text:active {
+  background-image: url("../img/bg-turbo-button-click.png");
+}
+
+.turbo__label-text.disabled {
+  background-image: url("../img/bg-turbo-button-disabled.png");
+}
+
+.turbo__checkbox:checked + .turbo__label {
+  background-image: url("../img/bg-turbo-on.png");
+}
+
+.turbo__checkbox:checked + .turbo__label .turbo__label-text {
+  top: 2.5px;
+  left: 2.5px;
+}
+
+.turbo__checkbox:not(:checked) + .turbo__label {
+  background-image: url("../img/bg-turbo-off.png");
+}
+
+.turbo__checkbox:not(:checked) + .turbo__label .turbo__label-text {
+  left: 2.5px;
+  bottom: 7.5px;
+}
