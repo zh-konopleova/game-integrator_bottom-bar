@@ -1,0 +1,334 @@
+html,
+body {
+  padding: 0;
+  marrgin: 0;
+  background-color: #6a3505;
+}
+.bar {
+  position: relative;
+  width: 1200px;
+  height: 250px;
+  margin: auto;
+  background-image: url('../img/background.png');
+  background-position: center 110px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.button {
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/bg-button-normal.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.button:hover {
+  background-image: url("../img/bg-button-hover.png");
+}
+.bet {
+  position: absolute;
+  top: 140px;
+  left: 120px;
+  padding: 3px;
+  width: 178px;
+  background-image: url("../img/bg-bet.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.bet__button {
+  width: 43px;
+  height: 43px;
+  font-size: 36px;
+  font-weight: bold;
+}
+.bet__button--minus {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+}
+.bet__button--plus {
+  position: absolute;
+  top: 3px;
+  left: 137px;
+}
+.bet__total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 5px 0 7px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ff6972;
+}
+.bet__count {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffe400;
+}
+.coin {
+  position: absolute;
+  top: 140px;
+  left: 310px;
+  padding: 3px;
+  width: 90px;
+  background-image: url("../img/bg-coin.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.coin__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 5px 0 7px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ff6972;
+}
+.coin__count {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffe400;
+}
+.good-luck {
+  position: absolute;
+  top: 115px;
+  left: 395px;
+  width: 410px;
+  height: 90px;
+  background-image: url("../img/bg-good-luck.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 90px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #ffe400;
+}
+.good-luck__text {
+  margin: 0;
+}
+.info {
+  position: absolute;
+  top: 140px;
+  left: 60px;
+  padding: 3px;
+  background-image: url("../img/bg-info.png");
+  background-size: 100% auto;
+}
+.info__button {
+  width: 47px;
+  height: 47px;
+  font-size: 36px;
+  font-weight: bold;
+}
+.spin {
+  position: absolute;
+  left: 885px;
+}
+.spin__list-container {
+  position: absolute;
+  top: 0;
+  width: 180px;
+  height: 190px;
+}
+.spin__list-label {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 180px;
+  height: 47px;
+  background-image: url("../img/bg-spin-value-normal.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+  font-size: 16px;
+  line-height: 45px;
+  vertical-align: middle;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+}
+.spin__list-label:hover {
+  background-image: url("../img/bg-spin-value-hover.png");
+}
+.spin__list-label:active {
+  background-image: url("../img/bg-spin-value-click.png");
+}
+.spin__list-label.disabled {
+  background-image: url("../img/bg-spin-value-disabled.png");
+}
+.spin__list {
+  display: block;
+  position: absolute;
+  list-style: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 180px;
+  z-index: 3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  margin: 0;
+  background-image: url("../img/bg-spin-list.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.spin__item {
+  margin: 1px 0;
+  color: #ffe400;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: bold;
+}
+.spin__button {
+  display: block;
+  position: absolute;
+  top: 85px;
+  left: 95px;
+  width: 160px;
+  height: 160px;
+  z-index: 10;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/bg-spin-button-normal.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.spin__button:hover {
+  background-image: url("../img/bg-spin-button-hover.png");
+}
+.spin__button:active {
+  background-image: url("../img/bg-spin-button-click.png");
+}
+.spin__button.disabled {
+  background-image: url("../img/bg-spin-button-disabled.png");
+}
+.spin__button-todo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 118.5px;
+  height: 97.5px;
+  margin-left: -60px;
+  margin-top: -49px;
+  background-image: url("../img/icon-updating.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+@-webkit-keyframes button-updating {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes button-updating {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.spin__button:hover .spin__button-todo {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation-name: button-updating;
+          animation-name: button-updating;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+.spin__button:hover .spin__button-todo {
+  opacity: 0.4;
+}
+.spin__button-todo--skip {
+  background-image: url("../img/icon-skip.png");
+}
+.spin__button-todo--stop {
+  background-image: url("../img/icon-stop.png");
+}
+.turbo {
+  position: absolute;
+  top: 145px;
+  left: 800px;
+}
+.turbo__checkbox {
+  display: none;
+}
+.turbo__label {
+  position: relative;
+  display: block;
+  width: 75px;
+  height: 50px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.turbo__label-text {
+  display: block;
+  position: absolute;
+  width: 70px;
+  height: 25px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 25px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-image: url("../img/bg-turbo-button-normal.png");
+  background-size: 100% auto;
+}
+.turbo__label-text:hover {
+  background-image: url("../img/bg-turbo-button-hover.png");
+}
+.turbo__label-text:active {
+  background-image: url("../img/bg-turbo-button-click.png");
+}
+.turbo__label-text.disabled {
+  background-image: url("../img/bg-turbo-button-disabled.png");
+}
+.turbo__checkbox:checked + .turbo__label {
+  background-image: url("../img/bg-turbo-on.png");
+}
+.turbo__checkbox:checked + .turbo__label .turbo__label-text {
+  top: 2.5px;
+  left: 2.5px;
+}
+.turbo__checkbox:not(:checked) + .turbo__label {
+  background-image: url("../img/bg-turbo-off.png");
+}
+.turbo__checkbox:not(:checked) + .turbo__label .turbo__label-text {
+  left: 2.5px;
+  bottom: 7.5px;
+}
